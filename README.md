@@ -15,13 +15,16 @@ async function bucarDados(){
   const body = await response.json();
   return body;
   } catch (err){
-    console.log("Deu")
+    console.log("Erro")
   } finally{
-    console.log("Deu")
+    console.log("Finally")
   }
 }
 bucarDados().then(body => {
-  // console.log(body);
-  var avatar_url=body.avatar_url;
-  var name=body.name;
+  console.log(body); 
+  //var name=body.name;
+  //GURDAR EM UMA VARIAVEL
+  //document.body.innerText=JSON.stringify(Object.values(body));
+  // MOSTAR EM TELA
+}
 ```
