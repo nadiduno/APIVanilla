@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/api.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
+    <title>API</title>
+  </head>
+  <body>
+    <div id="app">
+      <img class="avatar_url" src="#" alt="Foto de Nadiveth Duno">
+      <p class="name"></p>
+      <div class="details">
+        Em GitHub desde: &nbsp
+        <span class="created_at"></span>
+        <br />
+        Com &nbsp
+        <span class="public_repos"></span>
+        repositorios
+      </div>
+      <div class="foll">
+        <div>
+          <strong class="followers"></strong>
+          followers
+        </div>
+        <a href="https://github.com/nadiduno" target="_blank">
+          <img src="./src/follow.png" alt="Follower">
+        </a>
+        <div>
+          <strong class="following"></strong>
+          following
+        </div>
+      </div>
+      <p class="bio"></p>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+  <footer class="footer">
+    Informação recebida da
+    <span class="api">API</span>
+    <a href="https://api.github.com/users/nadiduno" target="_blank">
+      <strong class="received_events_url"></strong>
+    </a>
+  </footer>
+</html>
