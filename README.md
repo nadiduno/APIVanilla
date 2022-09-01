@@ -8,7 +8,7 @@ consumindo dados da API GitHub
 Design e layout by 
 [@nadiduno](https://www.instagram.com/nadiduno.csv/)
 
-´´´
+```
 async function bucarDados(){
   try{
     const response = await fetch ('https://api.github.com/users/nadiduno');
@@ -24,4 +24,4 @@ bucarDados().then(body => {
   // console.log(body);
   var avatar_url=body.avatar_url;
   var name=body.name;
-´´´´
+```
